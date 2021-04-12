@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox stylesheets="@../css/main.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.controller.MainPaneController">
+    <children>
+        <MenuBar>
+            <Menu mnemonicParsing="false" text="File">
+                <MenuItem fx:id="fileMenuItem" mnemonicParsing="false" text="Open txt File" />
+                <MenuItem fx:id="saveMenuItem" mnemonicParsing="false" text="Save txt File" />
+                <MenuItem fx:id="closeMenuItem" mnemonicParsing="false" text="Close" />
+            </Menu>
+            <Menu mnemonicParsing="false" text="Help">
+                <MenuItem fx:id="aboutMenuItem" mnemonicParsing="false" text="About" />
+            </Menu>
+        </MenuBar>
+        <HBox VBox.vgrow="ALWAYS">
+            <children>
+                <TextArea fx:id="mainTextArea" prefHeight="400.0" prefWidth="600.0" HBox.hgrow="ALWAYS" />
+            </children>
+        </HBox>
+        <HBox VBox.vgrow="NEVER">
+            <children>
+                <Button fx:id="encryptButton" maxWidth="1.7976931348623157E308" styleClass="button" text="Zaszyfruj" HBox.hgrow="ALWAYS" />
+                <Button fx:id="clearButton" maxWidth="1.7976931348623157E308" styleClass="button" text="Wyczyść" HBox.hgrow="ALWAYS" />
+                <Button fx:id="decryptButton" maxWidth="1.7976931348623157E308" styleClass="button" text="Odszyfruj" HBox.hgrow="ALWAYS" />
+            </children>
+        </HBox>
+    </children>
+</VBox>
